@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+          <!--Inicio do formulario-->
+        <form>
+            <h1>Calculadora de Gorjeta</h1>
+            
+            <p id="text1">Quanto foi a conta?</p>
+              <!--Primeiro input-->
+            
+            <input type="text" id="billamt" placeholder="Valor a ser pago">
+            
+
+            <p id="text2">Como foi o serviço prestado?</p>
+             <!--Menu de Opções-->
+            <select id="serviceQual">
+                <option disabled selected value="0"> Escolha as opções</option>
+                <option value="0.3">30&#37; &#45; Impressionante</option>
+                <option value="0.2">20&#37; &#45; Muito bom</option>
+                <option value="0.15">15&#37; &#45; Normal</option>
+                <option value="0.1">10&#37; &#45; Ruim</option>
+                <option value="0.05">5&#37; &#45; Muito Ruim</option>
+            </select>
+        </form>
+          <!--Fim do Formulario-->
+
+        <p id="text3">Quantas pessoas vão compartilhar a conta?</p>
+          <!--segundo input-->
+        <input type="text" id="peopleamt" placeholder="Numero de pessoas">
+        <button id="calculate" type="button">Calcular</button>       
+          
+          <!--Resultado do aplicativo-->
+        <div id="totalTip">
+            <sup>$</sup><Span id="tip">0.00</Span>
+            <small id="each">Por pessoa.</small>
+    
+        </div>
+    </div>
+
+      <script src="assets/script.js"></script>
+    
+
+</body>
+</html>
